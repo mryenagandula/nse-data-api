@@ -1,6 +1,7 @@
 import requests
 import csv
 from io import StringIO
+import logging as log
 
 
 def getNiftyFiftyStockList():
@@ -15,8 +16,7 @@ def getNiftyFiftyStockList():
     csv_reader = csv.reader(StringIO(csv_content))
     header = next(csv_reader)  # Read the header row
 
-    print("Column Names:")
-    print(header)
+    log.info(f"Column Names: {header}")
 
     niftyFiftyStocksList = [];
     for row in csv_reader:

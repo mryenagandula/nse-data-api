@@ -23,3 +23,5 @@ NIFTY_FIFTY_HEADERS = ["_id",
     "COP_DELIV_PERC",
     "VWAP",
     "mTIMESTAMP"]
+
+NIFTY_FIFTY_STOCKS = "nifty_50_stocks";
