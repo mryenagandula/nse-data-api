@@ -1,5 +1,9 @@
 {
-  "selectedNseDataType": "NIFTY_BANK",
+  "selectedNseDataType": "STOCKS",
+  "selectedNseDataTypeList" : ["NIFTY_FIFTY","NIFTY_NEXT_50_LIST","NIFTY_BANK"],
+  "selectedStocksList": ["INFY"],
+  "acceptedOptions" : ["INDICES","ALL","STOCKS"],
+  "noOfDaysFromPresent":7,
   "nseDataTypes": [
     "NIFTY_FIFTY",
     "NIFTY_NEXT_50_LIST",
