@@ -1,4 +1,5 @@
-HEADERS = ["_id",
+HEADERS = [
+    "_id",
     "CH_SYMBOL",
     "CH_SERIES",
     "CH_MARKET_TYPE",
@@ -12,17 +13,17 @@ HEADERS = ["_id",
     "CH_TOT_TRADED_VAL",
     "CH_52WEEK_HIGH_PRICE",
     "CH_52WEEK_LOW_PRICE",
-    "CH_TOTAL_TRADES",
-    "CH_ISIN",
-    "CH_TIMESTAMP",
-    "TIMESTAMP",
-    "createdAt",
-    "updatedAt",
-    "__v",
     "COP_DELIV_QTY",
     "COP_DELIV_PERC",
+    "CH_TOTAL_TRADES",
     "VWAP",
-    "mTIMESTAMP"]
+    "CH_TIMESTAMP",
+    "CH_ISIN",
+    "createdAt",
+    "updatedAt",
+    "TIMESTAMP",
+    "mTIMESTAMP"
+    ];
 
 NIFTY_FIFTY_STOCKS = "nifty_50stocks";
 NIFTY_NEXT_50_LIST_STOCKS="nifty_next50list";

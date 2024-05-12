@@ -58,3 +58,10 @@ def getStockListAndFileName(selectedType, fileName):
     myDict["fileName"] = fileName;
     myDict["stockList"] = stockList;
     return myDict;
+
+
+def getDictkeyAndValue(key,data):
+    if key in data:
+        return data[key] if data[key] else "";
+    else:
+        return '';
