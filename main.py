@@ -42,7 +42,7 @@ def synchronized(wrapped):
 
     return _wrap
 
-@synchronized
+# @synchronized
 def main():
     start_time = time.process_time()
     fileName = '';

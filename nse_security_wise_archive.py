@@ -15,7 +15,7 @@ def synchronized(wrapped):
 
     return _wrap
 
-@synchronized
+# @synchronized
 def nseGenerateSecurityWiseArchiveReport(fileName,stockList, selectedType,noOfDaysFromPresent):
     toDate = utils.getTodayDate();
     fromDate= utils.getPastWeekDate(noOfDaysFromPresent);
