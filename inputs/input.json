@@ -1,6 +1,6 @@
 {
-  "selectedNseDataType": "STOCKS",
-  "selectedNseDataTypeList" : ["NIFTY_500_LIST"],
+  "selectedNseDataType": "INDICES",
+  "selectedNseDataTypeList" : ["NIFTY_FIFTY","NIFTY_NEXT_50_LIST","NIFTY_100_LIST"],
   "selectedStocksList": ["SUNPHARMA","ITC","INFY"],
   "acceptedOptions" : ["INDICES","ALL","STOCKS"],
   "noOfDaysFromPresent":7,

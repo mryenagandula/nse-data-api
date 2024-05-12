@@ -41,3 +41,4 @@ def nseGenerateSecurityWiseArchiveReport(fileName,stockList, selectedType,noOfDa
     nseReportWriter.writeDataToCSV(fileName,constants.HEADERS,listOfDics)
     log.info(f"Completed writing Security wise archive Data to CSV and filename is {fileName}");
     log.info(f"Report is generating is completed and the period is from {fromDate} to {toDate}");
+    # pass
