@@ -1,0 +1,13 @@
+NIFTY_100_LIST_FILENAME="ind_nifty100list.csv";
+NIFTY_200_LIST_FILENAME="ind_nifty200list.csv";
+NIFTY_500_LIST_FILENAME="ind_nifty500list.csv";
+NIFTY_MICRO_CAP_250_LIST_FILENAME="ind_niftymicrocap250_list.csv";
+NIFTY_MID_CAP_50_LIST_FILENAME="ind_niftymidcap50list.csv";
+NIFTY_MID_CAP_100_LIST_FILENAME="ind_niftymidcap100list.csv";
+NIFTY_MID_CAP_150_LIST_FILENAME="ind_niftymidcap150list.csv";
+NIFTY_MID_CAP_SELECT_LIST_FILENAME="ind_niftymidcapselect_list.csv";
+NIFTY_MID_SMALL_CAP_400_LIST_FILENAME="ind_niftymidsmallcap400list.csv";
+NIFTY_NEXT_50_LIST_FILENAME="ind_niftynext50list.csv";
+NIFTY_SMALL_CAP_50_LIST_FILENAME="ind_niftysmallcap50list.csv";
+NIFTY_SMALL_CAP_100_LIST_FILENAME="ind_niftysmallcap100list.csv";
+NIFTY_SMALL_CAP_250_LIST_FILENAME="ind_niftysmallcap250list.csv";
