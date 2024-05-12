@@ -26,10 +26,14 @@ def nseGenerateSecurityWiseArchiveReport(fileName,stockList, selectedType,noOfDa
     listOfDics = [];
     log.info(f"Started Process for getting the list of nse security wise archive data.")
     for stockSymbol in stockList :
-        log.info(f"{stockSymbol} Stock Started fetching the data from server.....")
-        result = nseApis.security_wise_archive(fromDate, toDate,stockSymbol)
-        listOfDics.extend(result);
-        log.info(f"{stockSymbol} Stock Completed fetching the data from server.....")
+        try:
+            log.info(f"{stockSymbol} Stock Started fetching the data from server.....")
+            result = nseApis.security_wise_archive(fromDate, toDate,stockSymbol)
+            listOfDics.extend(result);
+            log.info(f"{stockSymbol} Stock Completed fetching the data from server.....")
+        except Exception as e:
+            log.info(f"Something went wrong due to exception {e}")
+            continue;
 
     log.info("Completed Process for getting the list of nse security wise archive data.")
     log.info("Number of records fetched from Api is ");
