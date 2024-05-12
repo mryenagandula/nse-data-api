@@ -24,3 +24,20 @@ print(ns.get_nifty_psu_bank())
 # # Create the directory (including intermediate-level directories)
 # os.makedirs(path)
 # print(f"Directory '{directory}' created at {path}")
+
+import time
+
+# Start the stopwatch
+start_time = time.process_time()
+
+# Your code or process here
+for i in range(1000000):
+    pass
+
+# Stop the stopwatch
+end_time = time.process_time()
+
+# Calculate elapsed time
+elapsed_time = end_time - start_time
+print(f"Elapsed time: {elapsed_time:.6f} seconds")
+

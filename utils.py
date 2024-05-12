@@ -1,10 +1,9 @@
 import datetime
 import os
 
-def getPastWeekDate():
-    N_DAYS_AGO = 7
+def getPastWeekDate(noOfDaysFromPresent):
     today = datetime.datetime.now()
-    n_days_ago = today - datetime.timedelta(days=N_DAYS_AGO)
+    n_days_ago = today - datetime.timedelta(days=noOfDaysFromPresent)
     strDate = n_days_ago.strftime("%d-%m-%Y");
     return strDate;
     
