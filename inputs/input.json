@@ -1,24 +1,41 @@
 {
   "selectedNseDataType": "INDICES",
-  "selectedNseDataTypeList" : ["NIFTY_FIFTY","NIFTY_NEXT_50_LIST","NIFTY_100_LIST"],
-  "selectedStocksList": ["SUNPHARMA","ITC","INFY"],
-  "acceptedOptions" : ["INDICES","ALL","STOCKS"],
-  "noOfDaysFromPresent":7,
+  "selectedNseDataTypeList": [
+    "NIFTY_FIFTY"
+  ],
+  "selectedStocksList": ["ITC"],
+  "acceptedOptions": ["INDICES", "ALL", "STOCKS"],
+  "noOfDaysFromPresent": 7,
+  "withFilters": true,
+  "filterOptions": {
+    "percentages": [
+      {
+        "percentage": 60,
+        "operator": ">"
+      },
+      {
+        "percentage": 70,
+        "operator": "<"
+      }
+    ],
+    "listOfOperators":["<=",">=","==","!=",">","<"]
+  },
   "nseDataTypes": [
+    "NIFTY_BANK",
+    "NIFTY_MID_CAP_SELECT_LIST",
     "NIFTY_FIFTY",
     "NIFTY_NEXT_50_LIST",
-    "NIFTY_100_LIST",
-    "NIFTY_200_LIST",
-    "NIFTY_500_LIST",
-    "NIFTY_MICRO_CAP_250_LIST",
-    "NIFTY_MID_CAP_50_LIST",
-    "NIFTY_MID_CAP_100_LIST",
-    "NIFTY_MID_CAP_150_LIST",
-    "NIFTY_MID_CAP_SELECT_LIST",
-    "NIFTY_MID_SMALL_CAP_400_LIST",
     "NIFTY_SMALL_CAP_50_LIST",
+    "NIFTY_MID_CAP_50_LIST",
+    "NIFTY_100_LIST",
+    "NIFTY_MID_CAP_100_LIST",
     "NIFTY_SMALL_CAP_100_LIST",
+    "NIFTY_MID_CAP_150_LIST",
+    "NIFTY_200_LIST",
+    "NIFTY_MICRO_CAP_250_LIST",
     "NIFTY_SMALL_CAP_250_LIST",
-    "NIFTY_BANK"
-  ]
+    "NIFTY_MID_SMALL_CAP_400_LIST",
+    "NIFTY_500_LIST"
+  ],
+  "reportsDir" : "H://NSEReports//"
 }
