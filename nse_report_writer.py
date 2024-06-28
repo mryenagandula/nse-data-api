@@ -1,6 +1,7 @@
 import csv
 import logging as log
 from nse_utils import getDictkeyAndValue
+from constants import DEALS_HEADERS
 
 def writeDataToCSV(fileName: str,headers, result) :
     with open(fileName, 'w', encoding='UTF8', newline='') as f:
@@ -36,3 +37,13 @@ def writeDataToCSV(fileName: str,headers, result) :
             ]);
         log.info("Completed writing data to CSV")
         log.info(f"Successfully Saved the file to specified directory {fileName}")
+
+def writeDealsDataToCSV(fileName: str,deal:str, result) :
+    with open(fileName, 'w', encoding='UTF8', newline='') as f:
+        writer = csv.writer(f);
+        log.info(f"Started Deals-{deal} writing data to CSV");
+        writer.writerow(DEALS_HEADERS);
+        for data in result :
+            writer.writerow(data.values());
+        log.info(f"Completed Deals-{deal} writing data to CSV")
+        log.info(f"Successfully Saved {deal} the file to specified directory {fileName}")

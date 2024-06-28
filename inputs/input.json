@@ -1,10 +1,12 @@
 {
-  "selectedNseDataType": "INDICES",
+  "selectedNseDataType": "LARGE_DEALS",
   "selectedNseDataTypeList": [
     "NIFTY_FIFTY"
   ],
   "selectedStocksList": ["ITC"],
-  "acceptedOptions": ["INDICES", "ALL", "STOCKS"],
+  "acceptedOptions": ["INDICES", "ALL", "STOCKS", "LARGE_DEALS"],
+  "selectedDeals": ["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
+  "acceptedDeals":["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
   "noOfDaysFromPresent": 7,
   "withFilters": true,
   "filterOptions": {
