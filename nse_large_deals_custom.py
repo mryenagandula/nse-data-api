@@ -19,10 +19,9 @@ def synchronized(wrapped):
 def nse_largedeals_customization(deal,fileName,fromDate,toDate):
   url = 'https://www.nseindia.com/api/historical/';
   modifiedUrl = url + deal + '?' + 'from='+fromDate+ '&to='+toDate;
-  log.info(url);
+  log.info(modifiedUrl);
   payload = nsefetch(modifiedUrl)
-  print(payload)
-  newFileName  = fileName + "_" + deal +"_custom" + ".csv";
+  newFileName  = fileName + "_" + deal + ".csv";
   nseReportWriter.writeDealsCustomDataToCSV(newFileName,deal,payload['data'])
   pass
 
@@ -31,7 +30,6 @@ def nse_largedeals(listOfDeals, fileName, noOfDaysFromPresent):
   fromDate= utils.getPastWeekDate(noOfDaysFromPresent);
   for deal in listOfDeals:
     nse_largedeals_customization(deal,fileName,fromDate, toDate);
-  pass
 
 # nse_largedeals(["bulk-deals","block-deals","short-selling"],"deals",7)
 # nse_largedeals_customization("bulk-deals","deals","07-07-2024","14-07-2024");

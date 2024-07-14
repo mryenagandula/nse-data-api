@@ -55,6 +55,17 @@ def writeDealsCustomDataToCSV(fileName: str,deal:str, result) :
         log.info(f"Started Deals-{deal} writing data to CSV");
         writer.writerow(DEALS_CUSTOM_HEADERS);
         for data in result :
-            writer.writerow(data.values());
+             writer.writerow([
+                getDictkeyAndValue("_id",data),
+                getDictkeyAndValue("BD_DT_DATE",data),
+                getDictkeyAndValue("BD_SYMBOL",data),
+                getDictkeyAndValue("BD_SCRIP_NAME",data),
+                getDictkeyAndValue("BD_CLIENT_NAME",data),
+                getDictkeyAndValue("BD_BUY_SELL",data),
+                getDictkeyAndValue("BD_QTY_TRD",data),
+                getDictkeyAndValue("BD_TP_WATP",data),
+                getDictkeyAndValue("createdAt",data),
+                getDictkeyAndValue("updatedAt",data),
+            ]);
         log.info(f"Completed Deals-{deal} writing data to CSV")
         log.info(f"Successfully Saved {deal} the file to specified directory {fileName}");
