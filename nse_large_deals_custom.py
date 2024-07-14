@@ -23,7 +23,7 @@ def nse_largedeals_customization(deal,fileName,fromDate,toDate):
   payload = nsefetch(modifiedUrl)
   print(payload)
   newFileName  = fileName + "_" + deal +"_custom" + ".csv";
-  nseReportWriter.writeDealsDataToCSV(newFileName,deal,payload['data'])
+  nseReportWriter.writeDealsCustomDataToCSV(newFileName,deal,payload['data'])
   pass
 
 def nse_largedeals(listOfDeals, fileName, noOfDaysFromPresent):
