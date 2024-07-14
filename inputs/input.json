@@ -1,12 +1,14 @@
 {
-  "selectedNseDataType": "LARGE_DEALS",
+  "selectedNseDataType": "LARGE_DEALS_CUSTOMIZATION",
   "selectedNseDataTypeList": [
     "NIFTY_FIFTY"
   ],
   "selectedStocksList": ["ITC"],
-  "acceptedOptions": ["INDICES", "ALL", "STOCKS", "LARGE_DEALS"],
+  "acceptedOptions": ["INDICES", "ALL", "STOCKS", "LARGE_DEALS", "LARGE_DEALS_CUSTOMIZATION"],
   "selectedDeals": ["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
   "acceptedDeals":["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
+  "selectedDealsCustomization":["bulk-deals","block-deals","short-selling"],
+  "acceptedDealsCustomization":["bulk-deals","block-deals","short-selling"],
   "noOfDaysFromPresent": 7,
   "withFilters": true,
   "filterOptions": {
