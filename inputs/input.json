@@ -1,5 +1,5 @@
 {
-  "selectedNseDataType": "LARGE_DEALS_CUSTOMIZATION",
+  "selectedNseDataType": "INDICES",
   "selectedNseDataTypeList": [
     "NIFTY_FIFTY"
   ],
@@ -9,7 +9,7 @@
   "acceptedDeals":["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
   "selectedDealsCustomization":["bulk-deals"],
   "acceptedDealsCustomization":["bulk-deals","block-deals","short-selling"],
-  "noOfDaysFromPresent": 30,
+  "noOfDaysFromPresent": 7,
   "withFilters": true,
   "filterOptions": {
     "percentages": [

@@ -45,7 +45,7 @@ def nseGenerateSecurityWiseArchiveReport(fileName,stockList, selectedType,noOfDa
     if withFilters:
         filtered_result =[];
         filtered_result = list(filter(lambda d: getCondition(d,percentages) , listOfDics))
-        nseReportWriter.writeDataToCSV(fileName+"_filtered"+".csv",constants.HEADERS,filtered_result)
+        nseReportWriter.writeFiltersDataToCSV(fileName+"_filtered"+".csv",constants.FILTERS_HEADERS,filtered_result)
     log.info(f"Completed writing Security wise archive Data to CSV and filename is {fileName}");
     log.info(f"Report is generating is completed and the period is from {fromDate} to {toDate}");
     pass

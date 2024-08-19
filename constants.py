@@ -25,6 +25,31 @@ HEADERS = [
     "mTIMESTAMP"
     ];
 
+FILTERS_HEADERS = [
+    "mTIMESTAMP",
+    "CH_SYMBOL",
+    "COP_DELIV_PERC",
+    "COP_DELIV_QTY",
+    "CH_TOT_TRADED_QTY",
+    "CH_OPENING_PRICE",
+    "CH_TRADE_HIGH_PRICE",
+    "CH_TRADE_LOW_PRICE",
+    "CH_CLOSING_PRICE",
+    "CH_52WEEK_HIGH_PRICE",
+    "CH_52WEEK_LOW_PRICE",
+    "CH_TOTAL_TRADES",
+    "CH_LAST_TRADED_PRICE",
+    "CH_PREVIOUS_CLS_PRICE",
+    "VWAP",
+    "CH_TIMESTAMP",
+    "CH_ISIN",
+    "createdAt",
+    "updatedAt",
+    "TIMESTAMP",
+    "CH_TOT_TRADED_VAL",
+    "CH_SERIES"
+    ];
+
 DEALS_HEADERS= ['DATE', 'STOCK_SYMBOL', 'STOCK_NAME', 'CLIENT_NAME', 'BUY_OR_SELL', 'TRADED_QUANTITY', 'WATP', 'REMARKS'];
 DEALS_CUSTOM_HEADERS = ["ID","DATE","STOCK_SYMBOL","STOCK_NAME","CLIENT_NAME","BUY_OR_SELL","TRADED_QUANTITY","WATP","Created At","Updated At","TIMESTAMP"];
 DEALS_KEYS = ['date', 'symbol', 'name', 'clientName', 'buySell', 'qty', 'watp', 'remarks']

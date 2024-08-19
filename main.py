@@ -23,14 +23,14 @@ def logConfig(logFileName):
     
     # NORMAL MODE
     logging.basicConfig(
-        filename= os.path.join(folderPath, logFileName),
+        # filename= os.path.join(folderPath, logFileName),
         format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s',
         level=logging.INFO
     )
 
     # DEBUG MODE
     logging.basicConfig(
-        filename= os.path.join(folderPath, logFileName),
+        # filename= os.path.join(folderPath, logFileName),
         format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s',
         level=logging.DEBUG
     )

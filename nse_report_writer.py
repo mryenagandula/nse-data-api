@@ -38,6 +38,40 @@ def writeDataToCSV(fileName: str,headers, result) :
         log.info("Completed writing data to CSV")
         log.info(f"Successfully Saved the file to specified directory {fileName}")
 
+
+def writeFiltersDataToCSV(fileName: str,headers, result) :
+    with open(fileName, 'w', encoding='UTF8', newline='') as f:
+        writer = csv.writer(f);
+        log.info("Started Filters writing data to CSV");
+        writer.writerow(headers);
+        for data in result :
+            writer.writerow([
+                getDictkeyAndValue("mTIMESTAMP",data),
+                getDictkeyAndValue("CH_SYMBOL",data),
+                getDictkeyAndValue("COP_DELIV_PERC",data),
+                getDictkeyAndValue("COP_DELIV_QTY",data),
+                getDictkeyAndValue("CH_TOT_TRADED_QTY",data),
+                getDictkeyAndValue("CH_OPENING_PRICE",data),
+                getDictkeyAndValue("CH_TRADE_HIGH_PRICE",data),
+                getDictkeyAndValue("CH_TRADE_LOW_PRICE",data),
+                getDictkeyAndValue("CH_CLOSING_PRICE",data),
+                getDictkeyAndValue("CH_52WEEK_HIGH_PRICE",data),
+                getDictkeyAndValue("CH_52WEEK_LOW_PRICE",data),
+                getDictkeyAndValue("CH_TOTAL_TRADES",data),
+                getDictkeyAndValue("CH_LAST_TRADED_PRICE",data),
+                getDictkeyAndValue("CH_PREVIOUS_CLS_PRICE",data),
+                getDictkeyAndValue("VWAP",data),
+                getDictkeyAndValue("CH_TIMESTAMP",data),
+                getDictkeyAndValue("CH_ISIN",data),
+                getDictkeyAndValue("createdAt",data),
+                getDictkeyAndValue("updatedAt",data),
+                getDictkeyAndValue("TIMESTAMP",data),
+                getDictkeyAndValue("CH_TOT_TRADED_VAL",data),
+                getDictkeyAndValue("CH_SERIES",data)
+            ]);
+        log.info("Completed Filters writing data to CSV")
+        log.info(f"Successfully Saved the filters file to specified directory {fileName}")
+
 def writeDealsDataToCSV(fileName: str,deal:str, result) :
     with open(fileName, 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f);
