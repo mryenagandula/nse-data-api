@@ -2,6 +2,7 @@ import csv
 import logging as log
 from nse_utils import getDictkeyAndValue
 from constants import DEALS_HEADERS,DEALS_CUSTOM_HEADERS
+import nse_data_consecutive_days as nse_consecutive
 
 def writeDataToCSV(fileName: str,headers, result) :
     with open(fileName, 'w', encoding='UTF8', newline='') as f:
@@ -71,6 +72,14 @@ def writeFiltersDataToCSV(fileName: str,headers, result) :
             ]);
         log.info("Completed Filters writing data to CSV")
         log.info(f"Successfully Saved the filters file to specified directory {fileName}")
+
+def writeFiltersConsecutiveDataToCSV(fileName1: str, fileName2,headers, result, consecutiveDays, percentages) :
+    log.info("Completed consecutive days writing data to CSV")
+    consecutiveRecords = nse_consecutive.consecutive_days(fileName2,result,percentages,consecutiveDays); 
+    print(consecutiveRecords)
+    writeFiltersDataToCSV(fileName1,headers, consecutiveRecords); 
+    log.info(f"Successfully Saved the consecutive days file to specified directory {fileName1} - {fileName2}")
+        
 
 def writeDealsDataToCSV(fileName: str,deal:str, result) :
     with open(fileName, 'w', encoding='UTF8', newline='') as f:

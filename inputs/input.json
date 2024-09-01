@@ -3,13 +3,14 @@
   "selectedNseDataTypeList": [
     "NIFTY_FIFTY"
   ],
-  "selectedStocksList": ["ITC"],
+  "selectedStocksList": ["BHARTIARTL"],
   "acceptedOptions": ["INDICES", "ALL", "STOCKS", "LARGE_DEALS", "LARGE_DEALS_CUSTOMIZATION"],
   "selectedDeals": ["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
   "acceptedDeals":["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
   "selectedDealsCustomization":["bulk-deals"],
   "acceptedDealsCustomization":["bulk-deals","block-deals","short-selling"],
-  "noOfDaysFromPresent": 30,
+  "noOfDaysFromPresent":30,
+  "consecutiveDays":3,
   "withFilters": true,
   "filterOptions": {
     "percentages": [
@@ -18,7 +19,7 @@
         "operator": ">"
       },
       {
-        "percentage": 70,
+        "percentage": 100,
         "operator": "<"
       }
     ],

@@ -43,9 +43,12 @@ def nseGenerateSecurityWiseArchiveReport(fileName,stockList, selectedType,noOfDa
     filterOptions = input['filterOptions'];
     percentages = filterOptions['percentages'];
     if withFilters:
+        consecutiveDays = input['consecutiveDays'] | 3; 
         filtered_result =[];
         filtered_result = list(filter(lambda d: getCondition(d,percentages) , listOfDics))
         nseReportWriter.writeFiltersDataToCSV(fileName+"_filtered"+".csv",constants.FILTERS_HEADERS,filtered_result)
+        nseReportWriter.writeFiltersConsecutiveDataToCSV(fileName+"_consecutive_days"+".csv", fileName+"_duplicate"+".csv",constants.FILTERS_HEADERS,filtered_result,consecutiveDays, percentages)
+        
     log.info(f"Completed writing Security wise archive Data to CSV and filename is {fileName}");
     log.info(f"Report is generating is completed and the period is from {fromDate} to {toDate}");
     pass
