@@ -9,7 +9,7 @@
   "acceptedDeals":["BULK_DEALS_DATA","SHORT_DEALS_DATA","BLOCK_DEALS_DATA"],
   "selectedDealsCustomization":["bulk-deals"],
   "acceptedDealsCustomization":["bulk-deals","block-deals","short-selling"],
-  "noOfDaysFromPresent": 7,
+  "noOfDaysFromPresent": 30,
   "withFilters": true,
   "filterOptions": {
     "percentages": [
