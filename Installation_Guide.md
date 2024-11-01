@@ -1,4 +1,13 @@
 # Installation Process
+pip install nsepython
+
+pip install nsepythonserver 
+
+replace REPORTS DIR addresses with your own specific directories
+
+REPORTS_DIR = "H://NSEReports//";
+
+"reportsDir" : "H://NSEReports//"
 
 
 # 01/09/2024
