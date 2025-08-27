@@ -20,12 +20,13 @@ def nse_largedeals_customization(deal,fileName,fromDate,toDate):
   url = 'https://www.nseindia.com/api/historical/';
   modifiedUrl = url + deal + '?' + 'from='+fromDate+ '&to='+toDate;
   log.info(modifiedUrl);
-  payload = nsefetch(modifiedUrl)
+  print(modifiedUrl)
+  payload = requests.get(modifiedUrl);
   newFileName  = fileName + "_" + deal + ".csv";
   nseReportWriter.writeDealsCustomDataToCSV(newFileName,deal,payload['data'])
   pass
 
-def nse_largedeals(listOfDeals, fileName, noOfDaysFromPresent):
+def nse_largedeals_custom(listOfDeals, fileName, noOfDaysFromPresent):
   toDate = utils.getTodayDate();
   fromDate= utils.getPastWeekDate(noOfDaysFromPresent);
   for deal in listOfDeals:
