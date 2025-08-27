@@ -11,7 +11,7 @@
   "acceptedDealsCustomization":["bulk-deals","block-deals","short-selling"],
   "noOfDaysFromPresent":30,
   "consecutiveDays":3,
-  "withFilters": true,
+  "withFilters": false,
   "filterOptions": {
     "percentages": [
       {
@@ -42,5 +42,5 @@
     "NIFTY_MID_SMALL_CAP_400_LIST",
     "NIFTY_500_LIST"
   ],
-  "reportsDir" : "H://NSEReports//"
+  "reportsDir" : "F://NSEReports//"
 }

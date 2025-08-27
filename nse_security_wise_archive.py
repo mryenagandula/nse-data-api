@@ -30,6 +30,7 @@ def nseGenerateSecurityWiseArchiveReport(fileName,stockList, selectedType,noOfDa
             log.info(f"{stockSymbol} Stock Started fetching the data from server.....")
             result = nseApis.security_wise_archive(fromDate, toDate,stockSymbol)
             listOfDics.extend(result);
+            log.info(f"Total items in list :: {len(listOfDics)}")
             log.info(f"{stockSymbol} Stock Completed fetching the data from server.....")
         except Exception as e:
             log.info(f"Something went wrong due to exception {e}")
